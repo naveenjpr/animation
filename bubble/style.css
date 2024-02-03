@@ -1,0 +1,56 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        background-color: blue;
+    }
+    
+    @keyframes sun {
+        0% {
+            bottom: -400px;
+        }
+        50% {
+            bottom: -200px
+        }
+        100% {
+            bottom: -400px;
+        }
+    }
+    
+    @keyframes sunyellow {
+        0% {
+            bottom: -350px;
+            left: 50%;
+        }
+        50% {
+            bottom: 200px;
+            left: 50%;
+        }
+        100% {
+            bottom: -350px;
+            left: 50%;
+        }
+    }
+    
+    .white-sun {
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -400px;
+        animation: sun 5s 0s infinite linear;
+    }
+    
+    .yellow-sun {
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -350px;
+        left: 50%;
+        animation: sunyellow 8s 0s infinite linear;
+    }

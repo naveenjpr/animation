@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: azure;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+}
+
+@keyframes truck {
+    from {
+        bottom: 0px;
+        left: 0px;
+    }
+    to {
+        bottom: 0px;
+        left: 100%;
+    }
+}
+
+.truck {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    animation: truck 5s 3s infinite linear;
+}

@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url("./872033200amazing-ocean-carribean-water-gif.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes changeposition {
+    0% {
+        left: 0px;
+        bottom: 0px;
+    }
+    100% {
+        left: 100%;
+        bottom: 20%;
+    }
+}
+
+img {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    bottom: 0px;
+    left: 0px;
+    animation: changeposition 5s 0s infinite linear;
+}
